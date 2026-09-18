@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeSafe AI Blog</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f5f7fb;
+        color: #14213d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #eef4ff 0%, #f8faff 35%, #f5f7fb 100%);
+      }
+
+      .page {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      .hero {
+        padding: 40px;
+        border-radius: 24px;
+        background: #14213d;
+        color: #ffffff;
+        box-shadow: 0 20px 60px rgba(20, 33, 61, 0.18);
+      }
+
+      .hero p,
+      .post p {
+        line-height: 1.6;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        font-size: 0.85rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #9ec5ff;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+
+      .posts {
+        margin-top: 28px;
+      }
+
+      .posts-title {
+        margin: 0 0 20px;
+      }
+
+      .post-list {
+        display: grid;
+        gap: 20px;
+      }
+
+      .post {
+        padding: 28px;
+        border-radius: 20px;
+        background: #ffffff;
+        border: 1px solid #dbe4f3;
+        box-shadow: 0 10px 30px rgba(20, 33, 61, 0.08);
+      }
+
+      .meta {
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        color: #52607a;
+      }
+
+      .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tag {
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #d7e5ff;
+        color: #163a74;
+        font-size: 0.95rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">Community Blog</p>
+        <h1>TypeSafe AI Blog</h1>
+        <p>
+          Notes, tutorials, and product thinking about building AI systems with safer schemas,
+          predictable interfaces, and reliable developer workflows.
+        </p>
+      </section>
+
+      <section class="posts" aria-labelledby="recent-posts-title">
+        <h2 class="posts-title" id="recent-posts-title">Recent posts</h2>
+        <div class="post-list">
+          <article class="post">
+            <p class="meta">September 2026 · Introduction</p>
+            <h3>Why Type Safety Matters for AI Applications</h3>
+            <p>
+              Strong typing helps teams move AI features from prototypes to production with fewer
+              runtime surprises. Contracts for prompts, tools, and model outputs make systems easier
+              to validate, test, and trust.
+            </p>
+            <ul class="tag-list" aria-label="Post topics">
+              <li class="tag">Schemas</li>
+              <li class="tag">Reliability</li>
+              <li class="tag">DX</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="meta">September 2026 · Tutorial</p>
+            <h3>Designing Safer Tool Calls with Typed Interfaces</h3>
+            <p>
+              Typed tool contracts help constrain model behavior and give developers structured data
+              they can confidently pass into downstream services. That means simpler validation and
+              better failure handling.
+            </p>
+            <ul class="tag-list" aria-label="Post topics">
+              <li class="tag">Tooling</li>
+              <li class="tag">Validation</li>
+              <li class="tag">Integrations</li>
+            </ul>
+          </article>
+
+          <article class="post">
+            <p class="meta">September 2026 · Community</p>
+            <h3>What We Want This Blog to Share</h3>
+            <p>
+              This space is for practical posts about TypeSafe AI: implementation patterns, lessons
+              learned, case studies, and ideas that make AI systems more maintainable for everyone.
+            </p>
+            <ul class="tag-list" aria-label="Post topics">
+              <li class="tag">Community</li>
+              <li class="tag">Case Studies</li>
+              <li class="tag">Best Practices</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
