@@ -54,9 +54,16 @@
       }
 
       .posts {
+        margin-top: 28px;
+      }
+
+      .posts-title {
+        margin: 0 0 20px;
+      }
+
+      .post-list {
         display: grid;
         gap: 20px;
-        margin-top: 28px;
       }
 
       .post {
@@ -83,9 +90,10 @@
       .tag {
         padding: 6px 12px;
         border-radius: 999px;
-        background: #e8f0ff;
-        color: #20488f;
-        font-size: 0.85rem;
+        background: #d7e5ff;
+        color: #163a74;
+        font-size: 0.95rem;
+        font-weight: 600;
       }
     </style>
   </head>
@@ -100,50 +108,53 @@
         </p>
       </section>
 
-      <section class="posts" aria-label="Recent posts">
-        <article class="post">
-          <p class="meta">September 2026 · Introduction</p>
-          <h2>Why Type Safety Matters for AI Applications</h2>
-          <p>
-            Strong typing helps teams move AI features from prototypes to production with fewer
-            runtime surprises. Contracts for prompts, tools, and model outputs make systems easier
-            to validate, test, and trust.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Schemas</span>
-            <span class="tag">Reliability</span>
-            <span class="tag">DX</span>
-          </div>
-        </article>
+      <section class="posts" aria-labelledby="recent-posts-title">
+        <h2 class="posts-title" id="recent-posts-title">Recent posts</h2>
+        <div class="post-list">
+          <article class="post">
+            <p class="meta">September 2026 · Introduction</p>
+            <h3>Why Type Safety Matters for AI Applications</h3>
+            <p>
+              Strong typing helps teams move AI features from prototypes to production with fewer
+              runtime surprises. Contracts for prompts, tools, and model outputs make systems easier
+              to validate, test, and trust.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Schemas</span>
+              <span class="tag">Reliability</span>
+              <span class="tag">DX</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <p class="meta">September 2026 · Tutorial</p>
-          <h2>Designing Safer Tool Calls with Typed Interfaces</h2>
-          <p>
-            Typed tool contracts help constrain model behavior and give developers structured data
-            they can confidently pass into downstream services. That means simpler validation and
-            better failure handling.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Tooling</span>
-            <span class="tag">Validation</span>
-            <span class="tag">Integrations</span>
-          </div>
-        </article>
+          <article class="post">
+            <p class="meta">September 2026 · Tutorial</p>
+            <h3>Designing Safer Tool Calls with Typed Interfaces</h3>
+            <p>
+              Typed tool contracts help constrain model behavior and give developers structured data
+              they can confidently pass into downstream services. That means simpler validation and
+              better failure handling.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Tooling</span>
+              <span class="tag">Validation</span>
+              <span class="tag">Integrations</span>
+            </div>
+          </article>
 
-        <article class="post">
-          <p class="meta">September 2026 · Community</p>
-          <h2>What We Want This Blog to Share</h2>
-          <p>
-            This space is for practical posts about TypeSafe AI: implementation patterns, lessons
-            learned, case studies, and ideas that make AI systems more maintainable for everyone.
-          </p>
-          <div class="tag-list">
-            <span class="tag">Community</span>
-            <span class="tag">Case Studies</span>
-            <span class="tag">Best Practices</span>
-          </div>
-        </article>
+          <article class="post">
+            <p class="meta">September 2026 · Community</p>
+            <h3>What We Want This Blog to Share</h3>
+            <p>
+              This space is for practical posts about TypeSafe AI: implementation patterns, lessons
+              learned, case studies, and ideas that make AI systems more maintainable for everyone.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Community</span>
+              <span class="tag">Case Studies</span>
+              <span class="tag">Best Practices</span>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
   </body>
