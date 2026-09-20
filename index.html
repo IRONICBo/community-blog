@@ -98,6 +98,16 @@
         font-size: 0.95rem;
         font-weight: 600;
       }
+
+      .post a {
+        color: #163a74;
+        text-underline-offset: 0.18em;
+      }
+
+      .post-links {
+        margin-bottom: 0;
+        font-weight: 700;
+      }
     </style>
   </head>
   <body>
@@ -114,6 +124,34 @@
       <section class="posts" aria-labelledby="recent-posts-title">
         <h2 class="posts-title" id="recent-posts-title">Recent posts</h2>
         <div class="post-list">
+          <article class="post">
+            <p class="meta">September 2026 · Community case study</p>
+            <h3>
+              <a href="https://socai-io.github.io/jev-social/">Jev Social: bounded decisions, real browser evidence</a>
+            </h3>
+            <p>
+              Jev Social uses Jev Choice decisions to route an Instagram, TikTok, or LinkedIn goal
+              and select each next read-only operation. The local socai CLI executes the operation
+              in the user's Chrome session, while captured posts, media, and source links stream
+              into an inspectable report.
+            </p>
+            <p>
+              Jev only selects from exact operations and observed targets supplied by the program;
+              it never writes shell commands or arbitrary selectors, and malformed or
+              low-confidence decisions do not execute.
+            </p>
+            <p class="post-links">
+              <a href="https://socai-io.github.io/jev-social/">Live demo</a>
+              ·
+              <a href="https://github.com/socai-io/jev-social">Source and implementation evidence</a>
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Jev</li>
+              <li class="tag">Browser Agents</li>
+              <li class="tag">Social Research</li>
+            </ul>
+          </article>
+
           <article class="post">
             <p class="meta">September 2026 · Introduction</p>
             <h3>Why Type Safety Matters for AI Applications</h3>
