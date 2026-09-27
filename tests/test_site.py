@@ -32,5 +32,8 @@ class SiteTests(unittest.TestCase):
         for anchor in ['jev-social', 'typed-contracts', 'tool-boundaries', 'community-notes']:
             self.assertIn(anchor, self.page.ids)
             self.assertIn('#' + anchor, self.page.links)
+    def test_jev_social_case_study_uses_current_release(self):
+        self.assertIn('Version\n              0.1.10', self.text)
+        self.assertIn('https://github.com/socai-io/jev-social/releases/tag/v0.1.10', self.page.links)
 
 if __name__ == '__main__': unittest.main()
