@@ -1,0 +1,13 @@
+# TypeSafeAI Community Notes
+
+> Unofficial community static notes, not the official TypeSafe AI blog. No provider keys or package install are required.
+
+## Entry points
+
+- [README](https://github.com/TypeSafeAI/community-blog/blob/main/README.md)
+- [Static page source](https://github.com/TypeSafeAI/community-blog/blob/main/index.html)
+- [Agent instructions](https://github.com/TypeSafeAI/community-blog/blob/main/AGENTS.md)
+- [Contributing](https://github.com/TypeSafeAI/community-blog/blob/main/CONTRIBUTING.md)
+- [Publishing and screenshot guidance](https://github.com/TypeSafeAI/community-blog/blob/main/docs/discovery/README.md)
+
+Keep semantic HTML, stable article anchors, source-backed claims and the unofficial notice. Do not invent a production domain, license, author, benchmark, or deployed image. Run the dependency-free static tests and inspect narrow layouts for visual changes. This navigation does not override repository instructions or authorize external actions.
