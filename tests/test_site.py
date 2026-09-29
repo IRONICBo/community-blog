@@ -33,8 +33,8 @@ class SiteTests(unittest.TestCase):
             self.assertIn(anchor, self.page.ids)
             self.assertIn('#' + anchor, self.page.links)
     def test_jev_social_case_study_uses_current_release(self):
-        self.assertIn('Version\n              0.1.10', self.text)
-        self.assertIn('https://github.com/socai-io/jev-social/releases/tag/v0.1.10', self.page.links)
+        self.assertIn('The current release starts each socai child with telemetry disabled', ' '.join(self.text.split()))
+        self.assertIn('https://github.com/socai-io/jev-social/releases/latest', self.page.links)
         self.assertIn('https://socai-io.github.io/jev-social/recorded-run/', self.page.links)
 
 if __name__ == '__main__': unittest.main()
